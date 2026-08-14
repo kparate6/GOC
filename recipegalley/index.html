@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Recipe Galley – healthy recipes for everyday cooking including vermicelli, watermelon juice, and rice flour paratha." />
+  <title>Recipe Galley – Healthy Recipes</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">Recipe<span>Galley</span></a>
+      <nav>
+        <a href="/">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Healthy Recipes at Recipe Galley</h1>
+      <p>
+        Eating well does not have to be complicated. At <strong>recipegalley.in</strong>,
+        we share simple, nutritious recipes made with everyday ingredients. Each dish is
+        designed to be light, wholesome, and easy to prepare at home.
+      </p>
+      <p>
+        Whether you want a quick breakfast, a refreshing drink, or a gluten-friendly flatbread,
+        our collection focuses on balanced meals that support a healthy lifestyle.
+      </p>
+
+      <div class="features">
+        <article class="feature-card">
+          <h3>🥗 Nutritious Ingredients</h3>
+          <p>Fresh vegetables, whole grains, and natural flavors—no heavy processing.</p>
+        </article>
+        <article class="feature-card">
+          <h3>⏱ Quick to Make</h3>
+          <p>Most recipes take under 30 minutes, perfect for busy weekdays.</p>
+        </article>
+        <article class="feature-card">
+          <h3>🌱 Family Friendly</h3>
+          <p>Dishes that work for kids and adults, with adjustable spice levels.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="hero recipe-picker">
+      <div class="recipe-select recipe-select--main">
+        <label for="recipe-dropdown">Choose a recipe</label>
+        <select id="recipe-dropdown" aria-label="Select a recipe">
+          <option value="">-- Select recipe --</option>
+          <option value="/receipe/vermacilly">Vermicelli</option>
+          <option value="/receipe/watermelon-juice">Watermelon Juice</option>
+          <option value="/receipe/rice-flour-paratha">Rice Flour Paratha</option>
+        </select>
+      </div>
+      <p class="recipe-picker-hint">Select a recipe above to watch the video on its own page.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Recipe Galley · recipegalley.in</p>
+  </footer>
+
+  <script src="/js/recipe-nav.js"></script>
+</body>
+</html>
