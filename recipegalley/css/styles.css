@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green-dark: #2d6a4f;
+  --green-mid: #40916c;
+  --green-light: #d8f3dc;
+  --cream: #fefae0;
+  --text: #1b4332;
+  --white: #ffffff;
+  --shadow: 0 4px 20px rgba(45, 106, 79, 0.12);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+  color: var(--white);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+header .container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.logo span {
+  color: var(--green-light);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.85;
+}
+
+.recipe-select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.recipe-select label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--green-light);
+}
+
+.recipe-select select {
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--white);
+  cursor: pointer;
+  min-width: 220px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.hero {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: var(--green-dark);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: var(--green-light);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.feature-card h3 {
+  color: var(--green-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.recipe-page h1 {
+  font-size: 2rem;
+  color: var(--green-dark);
+  margin-bottom: 0.5rem;
+}
+
+.recipe-meta {
+  color: var(--green-mid);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-content {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.recipe-content h2 {
+  color: var(--green-dark);
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.25rem;
+}
+
+.recipe-content h2:first-child {
+  margin-top: 0;
+}
+
+.recipe-content ul,
+.recipe-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-content li {
+  margin-bottom: 0.4rem;
+}
+
+.recipe-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  background: var(--green-light);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--green-mid);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.recipe-picker {
+  text-align: center;
+}
+
+.recipe-select--main {
+  align-items: center;
+  margin: 0 auto;
+}
+
+.recipe-select--main label {
+  color: var(--green-dark);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.recipe-select--main select {
+  min-width: 280px;
+  border: 2px solid var(--green-light);
+  padding: 0.75rem 1rem;
+}
+
+.recipe-picker-hint {
+  margin-top: 1rem;
+  color: var(--green-mid);
+  font-size: 0.95rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 1.5rem 0 1rem;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-credit {
+  font-size: 0.9rem;
+  color: var(--green-mid);
+}
+
+.video-credit a {
+  color: var(--green-dark);
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--green-mid);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
